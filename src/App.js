@@ -1,15 +1,24 @@
 import "./App.css";
-import Banner from "./Components/Banner/Banner";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
-
-import Header from "./Components/Header/Header";
-
+import Hader from "./Components/Header/Header";
+import Contract from "./Components/Contract/Contract";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <Banner></Banner>
-      <Footer></Footer>
+    <div>
+      <Router>
+        <Hader />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" Component={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+        <Contract />
+        <Footer />
+      </Router>
     </div>
   );
 }

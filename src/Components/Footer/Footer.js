@@ -9,7 +9,9 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="footer-widget footer-about">
-                <div className="footer-logo"></div>
+                <div className="footer-logo">
+                  <h2 className="footer-title">About Us</h2>
+                </div>
                 <div className="footer-about-content">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -51,7 +53,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6">
               <div className="footer-widget footer-menu">
                 <h2 className="footer-title">For Patients</h2>
-                <ul>
+                <ul className="justify-content-start">
                   <li>
                     <a to="/patient/search-doctor">Search for Doctors</a>
                   </li>
@@ -98,9 +100,11 @@ const Footer = () => {
                 <div className="footer-contact-info">
                   <div className="footer-address">
                     <span>
-                      <i className="fa fa-map-marker" aria-hidden="true"></i>
+                      <i className="fa fa-map-marker  " aria-hidden="true"></i>
                     </span>
-                    <p>3556 Mugda Street, Dhaka-1205, Bangladesh</p>
+                    <p className="">
+                      3556 Mugda Street, Dhaka-1205, Bangladesh
+                    </p>
                   </div>
                   <p>
                     <i className="fa fa-phone" aria-hidden="true"></i>

@@ -1,6 +1,7 @@
 import "../Header/Header.css";
 import React from "react";
 import { Container, Nav, Navbar, Stack, Button } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 
 const Hader = () => {
   return (
@@ -30,7 +31,7 @@ const Hader = () => {
             </Nav.Link>
 
             <Nav.Link to="/login">
-              <Button variant="primary">LOGIN / SIGNUP</Button>
+              <Button variant="primary"> LOGIN / SIGNUP</Button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
