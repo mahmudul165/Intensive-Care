@@ -1,3 +1,4 @@
+import "../Header/Header.css";
 import React from "react";
 import { Container, Nav, Navbar, Stack, Button } from "react-bootstrap";
 
@@ -16,7 +17,10 @@ const Hader = () => {
           </Nav>
 
           <Nav>
-            <Stack className=" d-none d-lg-inline  " gap={2}>
+            <div className="header-contact-img">
+              <i className="far fa-hospital"></i>
+            </div>
+            <Stack className=" d-none d-lg-inline ms-3 " gap={2}>
               <div className="text-danger">Contract</div>
               <h6>+8801749160165</h6>
             </Stack>
