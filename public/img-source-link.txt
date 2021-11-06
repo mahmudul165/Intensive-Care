@@ -1,0 +1,48 @@
+1.Website  related to general hospital, specialized hospital, diagnostic Lab, Doctors' chamber, Dental clinic, eye care
+ hospital, Pharmacy, medicine, physical therapy, exercise, gym, healthcare tech, nursing service, elderly home, mental
+ care, Feminine care, Ambulance service, etc.
+2.finalize your idea (what type of website you want to build). Then google the site design or visit themeforest.
+ to get your website idea. However, your website can not 
+be related to your previous assignments or any demo project displayed in the course or in our conceptual sessions.
+3.Home page will have a header (simple navbar), banner, services, and footer
+4.Add two extra sections in the home page in addition to the 4 sections mentioned above.
+5.Services section will have at least 6 services. You can put one or more services in a row based on your design.
+ Each service should have a relevant name, image, short description and a specific button.
+6.
+
+
+
+images
+1.
+https://doccure-react.dreamguystech.com/template-cardiology/217385fbe4576efea6f9db603381436c.png
+https://doccure-react.dreamguystech.com/template-cardiology/26b702778cc73ad0a678d3d9c4f21af8.png
+https://doccure-react.dreamguystech.com/template-cardiology/c685542439e3216ceb2dd86311876b40.jpg
+https://doccure-react.dreamguystech.com/template-cardiology/32e72c017cd1be6156666c991d8ea7fe.jpg
+https://doccure-react.dreamguystech.com/template-cardiology/45c8bd6e8a9345b55460bf1038148396.jpg
+https://doccure-react.dreamguystech.com/template-cardiology/82a4433cf691fc36ef45793cdcf35a14.png
+https://doccure-react.dreamguystech.com/template-cardiology/91ea38aa490b6087ed2dc741064eba5e.jpg
+https://doccure-react.dreamguystech.com/template-cardiology/915c6bf32adc0d0d863d2e7161d6e0ed.jpg
+https://doccure-react.dreamguystech.com/template-cardiology/933f9f9869d6c2fae5c28e1a0157f108.png
+https://doccure-react.dreamguystech.com/template-cardiology/5427e192abc461361bdc165987a89529.jpg
+https://doccure-react.dreamguystech.com/template-cardiology/217385fbe4576efea6f9db603381436c.png
+https://doccure-react.dreamguystech.com/template-cardiology/a35240d532c4cf30c0f32d07445f7b99.png
+https://doccure-react.dreamguystech.com/template-cardiology/b6e211bf818207f648a3954a15525a15.png
+https://doccure-react.dreamguystech.com/template-cardiology/b728d000525bac4c88e7674231119b25.png
+https://doccure-react.dreamguystech.com/template-cardiology/ba3ae664085d941ac3c7e6f8ceb3c8dd.png
+https://doccure-react.dreamguystech.com/template-cardiology/c428adf596f853028a339452dee87122.png
+https://doccure-react.dreamguystech.com/template-cardiology/c53010fb72ed22ae7e85ed7ffe6ba422.jpg
+https://doccure-react.dreamguystech.com/template-cardiology/e3bebc0cb7f61464e0eb26677ffe84a2.jpg
+*************carusel-banner***********
+http://wpthemesgrid.com/themes/mediplus/img/slider.jpg
+http://wpthemesgrid.com/themes/mediplus/img/slider2.jpg
+https://wpthemesgrid.com/themes/mediplus/img/slider3.jpg
+top-banner
+https://metropolitanhost.com/themes/themeforest/react/docfind/assets/img/subheader-bl.png
+
+doctors
+https://metropolitanhost.com/themes/themeforest/react/docfind/assets/img/doctors-grid/348x350-0.jpg
+https://metropolitanhost.com/themes/themeforest/react/docfind/assets/img/doctors-grid/348x350-1.jpg
+https://metropolitanhost.com/themes/themeforest/react/docfind/assets/img/doctors-grid/348x350-5.jpg
+https://metropolitanhost.com/themes/themeforest/react/docfind/assets/img/doctors-grid/348x350-4.jpg
+https://metropolitanhost.com/themes/themeforest/react/docfind/assets/img/doctors-grid/348x350-3.jpg
+https://metropolitanhost.com/themes/themeforest/react/docfind/assets/img/doctors-grid/348x350-2.jpg
