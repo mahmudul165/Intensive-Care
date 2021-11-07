@@ -29,6 +29,7 @@ const useFirebase = () => {
         seterror(error.message);
       });
   };
+  // login or signup using github
   const SignInUsingGit = () => {
     signInWithPopup(auth, gitProvider)
       .then((result) => {
@@ -54,7 +55,15 @@ const useFirebase = () => {
       }
     });
   }, []);
-  return { user, error, SignInUsingGoogle, SignInUsingGit, handleSignOut };
+  return {
+    user,
+    seterror,
+    setuser,
+    error,
+    SignInUsingGoogle,
+    SignInUsingGit,
+    handleSignOut,
+  };
 };
 
 export default useFirebase;

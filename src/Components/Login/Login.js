@@ -38,8 +38,11 @@ const Login = () => {
       </p>
       {/* sign in with google */}
       <div>---------OR---------</div>
-      <button onClick={SignInUsingGoogle} className="btn btn-primary">
+      <button onClick={SignInUsingGoogle} className="btn btn-primary mx-3">
         Login with Google
+      </button>
+      <button onClick={SignInUsingGit} className="btn btn-primary">
+        Login with Github
       </button>
     </div>
   );

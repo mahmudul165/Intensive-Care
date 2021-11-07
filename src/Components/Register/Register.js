@@ -1,8 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const Register = () => {
+  const { user, error, SignInUsingGoogle, SignInUsingGit, handleSignOut } =
+    useAuth();
   const {
     register,
     handleSubmit,
@@ -48,7 +51,12 @@ const Register = () => {
         </p>
         {/* sign in with google */}
         <div>--------OR----------</div>
-        <button className="btn btn-primary">Login with Google</button>
+        <button onClick={SignInUsingGoogle} className="btn btn-primary mx-3">
+          Login with Google
+        </button>
+        <button onClick={SignInUsingGit} className="btn btn-primary">
+          Login with Github
+        </button>
       </div>
     </>
   );
