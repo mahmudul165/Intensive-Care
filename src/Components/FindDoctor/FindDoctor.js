@@ -8,6 +8,7 @@ const FindDoctor = () => {
   // use of fontawesome icon
   const element = <FontAwesomeIcon icon={faCalendar} />;
   const address = <FontAwesomeIcon icon={faLocationArrow} />;
+
   const [service] = useService();
   return (
     <Container className="my-5">

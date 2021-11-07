@@ -1,9 +1,10 @@
 import React from "react";
+import FindDoctor from "../FindDoctor/FindDoctor";
 
 const Apointment = () => {
   return (
     <div>
-      <h1>Apointment</h1>
+      <FindDoctor></FindDoctor>
     </div>
   );
 };

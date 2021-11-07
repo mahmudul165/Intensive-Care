@@ -2,8 +2,11 @@ import "../Header/Header.css";
 import React from "react";
 import { Container, Nav, Navbar, Stack, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const Header = () => {
+  const { user, error, SignInUsingGoogle, SignInUsingGit, handleSignOut } =
+    useAuth();
   return (
     <Navbar expand="lg" bg="white">
       <Container fluid>
@@ -38,7 +41,7 @@ const Header = () => {
               <i className="far fa-hospital"></i>
             </div>
             <Stack className=" d-none d-lg-inline ms-3 " gap={2}>
-              <div className="text-danger">Contract</div>
+              <div className="text-warning">Contract</div>
               <h6>+8801749160165</h6>
             </Stack>
 
@@ -47,6 +50,7 @@ const Header = () => {
                 <Button varient="primary">Apointment</Button>
               </NavLink>
             </Nav.Link>
+            <Nav.Link className="text-warning">{user.displayName}</Nav.Link>
 
             <Nav.Link as={NavLink} to="/login">
               <NavLink
@@ -56,7 +60,13 @@ const Header = () => {
                   color: "#8a2be2",
                 }}
               >
-                <Button varient="primary">LOGIN / SIGNUP</Button>
+                {!user.displayName ? (
+                  <Button varient="primary"> LOGIN / SIGNUP</Button>
+                ) : (
+                  <Button onClick={handleSignOut} varient="primary">
+                    LOGOUT
+                  </Button>
+                )}
               </NavLink>
             </Nav.Link>
           </Nav>

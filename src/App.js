@@ -12,27 +12,29 @@ import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
 import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 import NotFound from "./Components/NotFound/NotFound";
+import AuthProvider from "./Components/Context/AuthProvider";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:index" element={<ServiceDetails />} />
-          <Route path="/find-doctor" element={<FindDoctor />} />
-          <Route path="/apointment" element={<Apointment />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-
-        <Footer />
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:index" element={<ServiceDetails />} />
+            <Route path="/find-doctor" element={<FindDoctor />} />
+            <Route path="/apointment" element={<Apointment />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
