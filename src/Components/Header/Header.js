@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Nav, Navbar, Stack, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 
-const Hader = () => {
+const Header = () => {
   return (
     <Navbar expand="lg" bg="white">
       <Container fluid>
@@ -66,4 +66,4 @@ const Hader = () => {
   );
 };
 
-export default Hader;
+export default Header;
