@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -40,7 +41,9 @@ const Banner = () => {
             <Button className="mx-2" variant="primary">
               Contract Now
             </Button>
-            <Button variant="secondary">Apointment</Button>
+            <NavLink to="/apointment">
+              <Button variant="secondary">Apointment</Button>
+            </NavLink>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
