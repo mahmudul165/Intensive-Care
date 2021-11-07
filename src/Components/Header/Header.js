@@ -12,16 +12,24 @@ const Hader = () => {
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto">
             <Nav.Link>
-              <NavLink to="/home"> Home </NavLink>
+              <NavLink to="/home" className="text-decoration-none">
+                Home
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" className="text-decoration-none">
+                About
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="/services"> Services</NavLink>
+              <NavLink to="/services" className="text-decoration-none">
+                Services
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="/find-doctor"> Find a Doctor </NavLink>
+              <NavLink to="/find-doctor" className="text-decoration-none">
+                Find a Doctor
+              </NavLink>
             </Nav.Link>
           </Nav>
 
@@ -35,7 +43,9 @@ const Hader = () => {
             </Stack>
 
             <Nav.Link>
-              <NavLink to="/apointment"> Apointment </NavLink>
+              <NavLink to="/apointment">
+                <Button varient="primary">Apointment</Button>
+              </NavLink>
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/login">
@@ -46,7 +56,7 @@ const Hader = () => {
                   color: "#8a2be2",
                 }}
               >
-                LOGIN / SIGNUP
+                <Button varient="primary">LOGIN / SIGNUP</Button>
               </NavLink>
             </Nav.Link>
           </Nav>
