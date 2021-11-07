@@ -10,30 +10,32 @@ const ServiceDetails = () => {
   return (
     <Container className="my-5">
       <h2 className="text-primary text-center">Our services no :{index}</h2>
-      <Row xs={1} md={1} className="g-4 gy-4">
-        {service.map((service) => {
-          return (
-            <Col>
-              <Card>
-                <Card.Img
-                  variant="top"
-                  width="300px"
-                  height="450px"
-                  src={service.service_img}
-                />
-                <Card.Body>
-                  <Card.Title className="  text-primary text-centar">
-                    {service.service_name}
-                  </Card.Title>
-                  <Card.Text>{service.service_info}</Card.Text>
-                </Card.Body>
-                {/* <Card.Footer>
-                <Button variant="primary">{shooping} Details</Button>
-              </Card.Footer> */}
-              </Card>
-            </Col>
-          );
-        })}
+      <Row xs={1} md={1} className="  gy-2">
+        {service.map((service) => (
+          <div>
+            {service.index == index && (
+              <Col>
+                <Card>
+                  <Card.Img
+                    variant="top"
+                    width="300px"
+                    height="450px"
+                    src={service.service_img}
+                  />
+                  <Card.Body>
+                    <Card.Title className="gy-2 py-2 my-2 text-primary text-centar">
+                      {service.service_name}
+                    </Card.Title>
+                    <Card.Text>{service.service_info}</Card.Text>
+                  </Card.Body>
+                  <Card>
+                    <Button variant="primary">Add to Favourite</Button>
+                  </Card>
+                </Card>
+              </Col>
+            )}
+          </div>
+        ))}
       </Row>
     </Container>
   );

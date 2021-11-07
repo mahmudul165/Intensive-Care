@@ -21,7 +21,7 @@ const Service = () => {
                 <Card.Img
                   variant="top"
                   width="200px"
-                  height="200px"
+                  height="350px"
                   className="rounded-circle p-2 m-2"
                   src={service.service_img}
                 />
