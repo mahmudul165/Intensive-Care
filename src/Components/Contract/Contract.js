@@ -10,9 +10,9 @@ const Contract = () => {
   } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
-    <div className="contract-img  text-primary">
-      <div className="container m-auto  my-3  ">
-        <div className="text-center">
+    <div className="contract-img  text-primary  ">
+      <div className="container m-auto     ">
+        <div className="text-center p-4 m-3">
           <h5>CONTACT US</h5>
           <h2>Always Connect With Us</h2>
         </div>

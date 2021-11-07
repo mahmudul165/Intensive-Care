@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  // const { user, loginGoogle } = useFirebase();
   const {
     register,
     handleSubmit,
@@ -10,11 +11,13 @@ const Login = () => {
   } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
-    <div className="my-4 text-center">
+    <div className="my-2 px-3 text-center">
       <h3 className="text-primary">Login</h3>
       <form onSubmit={handleSubmit(onSubmit)} className=" p-2">
         <input
-          defaultValue=""
+          type="email"
+          className="form-control"
+          id="exampleFormControlInput1"
           placeholder="your email address"
           {...register("email")}
           className="my-2 p-2"
@@ -33,8 +36,8 @@ const Login = () => {
       </p>
       {/* sign in with google */}
       <div>------------------</div>
-      <button className="btn btn-warning">Login with Google</button>
-      <h4> isplayName </h4>
+      <button className="btn btn-primary">Login with Google</button>
+      {/* <h4> displayName </h4> */}
     </div>
   );
 };

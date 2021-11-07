@@ -11,10 +11,18 @@ const Hader = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto">
-            <Nav.Link to="/home">Home</Nav.Link>
-            <Nav.Link to="/about">About</Nav.Link>
-            <Nav.Link to="/services">Services</Nav.Link>
-            <Nav.Link to="/find-doctor">Find a Doctor</Nav.Link>
+            <Nav.Link>
+              <NavLink to="/home"> Home </NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to="/about">About</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to="/services"> Services</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to="/find-doctor"> Find a Doctor </NavLink>
+            </Nav.Link>
           </Nav>
 
           <Nav>
@@ -26,12 +34,20 @@ const Hader = () => {
               <h6>+8801749160165</h6>
             </Stack>
 
-            <Nav.Link to="/apointment">
-              <Button variant="primary"> Apointment</Button>
+            <Nav.Link>
+              <NavLink to="/apointment"> Apointment </NavLink>
             </Nav.Link>
 
-            <Nav.Link to="/login">
-              <Button variant="primary"> LOGIN / SIGNUP</Button>
+            <Nav.Link as={NavLink} to="/login">
+              <NavLink
+                to="/login"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#8a2be2",
+                }}
+              >
+                LOGIN / SIGNUP
+              </NavLink>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

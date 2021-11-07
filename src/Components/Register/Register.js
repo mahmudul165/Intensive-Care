@@ -11,7 +11,7 @@ const Register = () => {
   const onSubmit = (data) => console.log(data);
   return (
     <>
-      <div className="my-4 text-center">
+      <div className="my-2 text-center my-4 px-3">
         <h3 className="text-primary">Sign Up</h3>
         <form onSubmit={handleSubmit(onSubmit)} className=" p-2">
           <input
@@ -48,7 +48,7 @@ const Register = () => {
         </p>
         {/* sign in with google */}
         <div>------------------</div>
-        <button className="btn btn-warning">Login with Google</button>
+        <button className="btn btn-primary">Login with Google</button>
       </div>
     </>
   );
