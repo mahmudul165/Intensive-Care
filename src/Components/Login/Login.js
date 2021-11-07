@@ -35,7 +35,7 @@ const Login = () => {
         Are you New user? <Link to="/register">sign up</Link>
       </p>
       {/* sign in with google */}
-      <div>------------------</div>
+      <div>---------OR---------</div>
       <button className="btn btn-primary">Login with Google</button>
       {/* <h4> displayName </h4> */}
     </div>

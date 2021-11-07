@@ -47,7 +47,7 @@ const Register = () => {
           Are you Already register? <Link to="/login">Login</Link>
         </p>
         {/* sign in with google */}
-        <div>------------------</div>
+        <div>--------OR----------</div>
         <button className="btn btn-primary">Login with Google</button>
       </div>
     </>

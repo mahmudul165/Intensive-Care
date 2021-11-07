@@ -10,10 +10,10 @@ const Contract = () => {
   } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
-    <div className="contract-img  text-primary  ">
+    <div className="contract-img  text-primary my-3 ">
       <div className="container m-auto     ">
         <div className="text-center p-4 m-3">
-          <h5>CONTACT US</h5>
+          <h5 className="p-3">CONTACT US</h5>
           <h2>Always Connect With Us</h2>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>

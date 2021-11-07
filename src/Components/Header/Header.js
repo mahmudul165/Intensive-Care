@@ -26,7 +26,7 @@ const Hader = () => {
           </Nav>
 
           <Nav>
-            <div className="header-contact-img">
+            <div className="header-contact-img d-none d-lg-inline ms-3 ">
               <i className="far fa-hospital"></i>
             </div>
             <Stack className=" d-none d-lg-inline ms-3 " gap={2}>

@@ -6,6 +6,11 @@ import Hader from "./Components/Header/Header";
 // import Contract from "./Components/Contract/Contract";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
+import Apointment from "./Components/Apointment/Apointment";
+import FindDoctor from "./Components/FindDoctor/FindDoctor";
+import About from "./Components/About/About";
+import Services from "./Components/Services/Services";
+import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 function App() {
   return (
     <div>
@@ -13,11 +18,12 @@ function App() {
         <Hader />
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:index" element={<ServiceDetails />} />
+          <Route path="/find-doctor" element={<FindDoctor />} />
+          <Route path="/apointment" element={<Apointment />} />
           <Route path="/login" element={<Login />} />
-          {/* <Route path="/login" Component={<Login />} /> */}
-          {/* <Route path="/login">
-            <Login></Login>
-          </Route> */}
           <Route path="/register" element={<Register />} />
         </Routes>
 
