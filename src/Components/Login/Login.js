@@ -1,17 +1,27 @@
+import { getAuth, signInWithEmailAndPassword } from "@firebase/auth";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 
 const Login = () => {
-  const { user, error, SignInUsingGoogle, SignInUsingGit, handleSignOut } =
-    useAuth();
+  const {
+    user,
+    error,
+    seterror,
+    setuser,
+    logInSignIn,
+    SignInUsingGoogle,
+    SignInUsingGit,
+  } = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = (data) => setuser(data);
+
   return (
     <div className="my-2 px-3 text-center">
       <h3 className="text-primary">Login</h3>
@@ -21,7 +31,7 @@ const Login = () => {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="your email address"
-          {...register("email")}
+          {...register("email", { required: true })}
           className="my-2 p-2"
         />
         <br />
@@ -31,10 +41,14 @@ const Login = () => {
           className="my-2 p-2"
         />
         {errors.password && <span>This field is required</span>} <br />
-        <input className="btn btn-primary" type="submit" />
+        <input
+          className="btn btn-primary"
+          type="submit"
+          onClick={logInSignIn}
+        />
       </form>
       <p>
-        Are you New user? <Link to="/register">sign up</Link>
+        Are you New user? <NavLink to="/register">sign up</NavLink>
       </p>
       {/* sign in with google */}
       <div>---------OR---------</div>
@@ -44,6 +58,7 @@ const Login = () => {
       <button onClick={SignInUsingGit} className="btn btn-primary">
         Login with Github
       </button>
+      <h1 className="text-center my-3 py-2 text-warning">{error}</h1>
     </div>
   );
 };

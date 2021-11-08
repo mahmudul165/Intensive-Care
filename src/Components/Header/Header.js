@@ -51,6 +51,7 @@ const Header = () => {
               </NavLink>
             </Nav.Link>
             <Nav.Link className="text-warning">{user.displayName}</Nav.Link>
+            <Nav.Link className="text-warning">{user.email}</Nav.Link>
 
             <Nav.Link as={NavLink} to="/login">
               <NavLink
@@ -60,7 +61,7 @@ const Header = () => {
                   color: "#8a2be2",
                 }}
               >
-                {!user.displayName ? (
+                {!user.displayName && !user.email ? (
                   <Button varient="primary"> LOGIN / SIGNUP</Button>
                 ) : (
                   <Button onClick={handleSignOut} varient="primary">

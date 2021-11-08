@@ -32,12 +32,6 @@ const Service = () => {
 
                   <Card.Text>{service.service_info.slice(0, 150)}</Card.Text>
                   <Row>
-                    {/* <NavLink to={}>
-                      <Button>
-                        {element}
-                        Details
-                      </Button>
-                    </NavLink> */}
                     <Link
                       to={`/services/${service.index}`}
                       className="btn btn-primary"
@@ -45,21 +39,8 @@ const Service = () => {
                       <span>{element} </span>
                       Details
                     </Link>
-
-                    {/* <Col>
-                      <small>
-                        {book}
-                        {service.lecture} Lectures
-                      </small>
-                    </Col>
-                    <Col>
-                      <small>{service.price} Taka</small>
-                    </Col> */}
                   </Row>
                 </Card.Body>
-                {/* <Card.Footer>
-                  <Button variant="primary">{shooping} Details</Button>
-                </Card.Footer> */}
               </Card>
             </Col>
           );

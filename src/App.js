@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
@@ -13,6 +13,7 @@ import Services from "./Components/Services/Services";
 import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 import NotFound from "./Components/NotFound/NotFound";
 import AuthProvider from "./Components/Context/AuthProvider";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (

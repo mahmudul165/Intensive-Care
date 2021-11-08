@@ -8,7 +8,7 @@ const useService = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setService(data));
-  }, [!service === true]);
+  }, []);
 
   return [service, setService];
 };
