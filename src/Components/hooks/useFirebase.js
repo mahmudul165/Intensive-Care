@@ -51,6 +51,7 @@ const useFirebase = () => {
         const user = result.user;
         setuser(user);
         seterror("");
+
         // ...
       })
       .catch((error) => {
@@ -79,11 +80,10 @@ const useFirebase = () => {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        console.log("instance the state change", user);
         setuser(user);
       }
     });
-  }, []);
+  }, [!user]);
 
   return {
     user,

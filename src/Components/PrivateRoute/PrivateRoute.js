@@ -11,26 +11,6 @@ const PrivateRoute = ({ children, ...rest }) => {
   ) : (
     <Navigate replace to="/login" />
   );
-  // return (
-  //   <Routes>
-  //     <Route
-  //       {...rest}
-  //       render={({ location }) =>
-  //         user.email || user.displayName ? (
-  //           children
-  //         ) : (
-  //           <Navigate
-  //             replace
-  //             to={{
-  //               pathname: "/login",
-  //               state: { from: location },
-  //             }}
-  //           />
-  //         )
-  //       }
-  //     />
-  //   </Routes>
-  // );
 };
 
 export default PrivateRoute;
