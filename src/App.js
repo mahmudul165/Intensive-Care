@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
@@ -22,13 +27,34 @@ function App() {
         <Router>
           <Header />
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/:index" element={<ServiceDetails />} />
-            <Route path="/find-doctor" element={<FindDoctor />} />
-            <Route path="/apointment" element={<Apointment />} />
+            <Route path="/services/*" element={<Services />} />
+            <Route
+              path="/services/:index"
+              element={
+                <PrivateRoute>
+                  <ServiceDetails />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/find-doctor"
+              element={
+                <PrivateRoute>
+                  <FindDoctor />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/apointment"
+              element={
+                <PrivateRoute>
+                  <Apointment />
+                </PrivateRoute>
+              }
+            />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<NotFound />} />

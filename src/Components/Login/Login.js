@@ -1,10 +1,12 @@
 import { getAuth, signInWithEmailAndPassword } from "@firebase/auth";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 
 const Login = () => {
+  const location = useLocation();
+  console.log("came from", location?.state?.from);
   const {
     user,
     error,
