@@ -22,7 +22,7 @@ const Register = () => {
   return (
     <>
       <div className="my-2 text-center my-4 px-3">
-        <h3 className="text-primary">Sign Up</h3>
+        <h4 className="text-primary">Sign Up</h4>
         <form onSubmit={handleSubmit(onSubmit)} className=" p-2">
           <input
             defaultValue=""

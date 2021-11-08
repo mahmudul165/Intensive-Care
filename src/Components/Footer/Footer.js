@@ -14,9 +14,10 @@ const Footer = () => {
                 </div>
                 <div className="footer-about-content">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    We understand the criticality of time in healthcare. Our
+                    protocols & teams are well designed to handle emergencies &
+                    planned treatments. We save our patient’s precious time &
+                    money at all steps of travel & treatment.
                   </p>
                   <div className="social-icon">
                     <ul>

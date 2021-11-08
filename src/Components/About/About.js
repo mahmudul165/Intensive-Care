@@ -3,8 +3,10 @@ import { Card, Col, Image, Row } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="m-auto container">
-      <h2 className="text-center text-primary">What Patient say about us</h2>
+    <div className="m-auto container my-3 py-3">
+      <h2 className="text-center text-primary my-2 py-1">
+        What Patient say about us
+      </h2>
       <Row className="  m-auto">
         <Col xs={12} md={4}>
           <Card>
@@ -21,11 +23,19 @@ const About = () => {
             </Card>
             <Card.Body>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little
-                bit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, pariatur.
+                Recently visited health check up Health care bd for a whole body
+                check up. The entire process from check in to the end was
+                seamless. The staff at the health check department was
+                courteous, helpful and very attentive. I would highly recommend
+                this to anyone looking for something similar services.
               </Card.Text>
+              <div className="text-center star-style">
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="far fa-star"></i>
+              </div>
             </Card.Body>
           </Card>
         </Col>
@@ -44,11 +54,19 @@ const About = () => {
             </Card>
             <Card.Body>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little
-                bit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, pariatur.
+                Recently visited health check up Health care bd for a whole body
+                check up. The entire process from check in to the end was
+                seamless. The staff at the health check department was
+                courteous, helpful and very attentive. I would highly recommend
+                this to anyone looking for something similar services.
               </Card.Text>
+              <div className="text-center star-style">
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+              </div>
             </Card.Body>
           </Card>
         </Col>
@@ -67,11 +85,20 @@ const About = () => {
             </Card>
             <Card.Body>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little
-                bit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recently visited health check up Health care bd for a whole body
+                check up. The entire process from check in to the end was
+                seamless. The staff at the health check department was
+                courteous, helpful and very attentive. I would highly recommend
+                this to anyone looking for something similar services.
                 Provident, pariatur.
               </Card.Text>
+              <div className="text-center star-style">
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="fas fa-star star-style"></i>
+                <i className="far fa-star"></i>
+              </div>
             </Card.Body>
           </Card>
         </Col>
