@@ -8,7 +8,6 @@ import {
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-// import Contract from "./Components/Contract/Contract";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
 import Apointment from "./Components/Apointment/Apointment";
@@ -19,6 +18,7 @@ import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 import NotFound from "./Components/NotFound/NotFound";
 import AuthProvider from "./Components/Context/AuthProvider";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import Contract from "./Components/Contract/Contract";
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contract />} />
             <Route path="/services/*" element={<Services />} />
             <Route
               path="/services/:index"

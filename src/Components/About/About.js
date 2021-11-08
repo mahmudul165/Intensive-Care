@@ -7,7 +7,7 @@ const About = () => {
       <h2 className="text-center text-primary my-2 py-1">
         What Patient say about us
       </h2>
-      <Row className="  m-auto">
+      <Row className="m-auto">
         <Col xs={12} md={4}>
           <Card>
             <Card>

@@ -15,9 +15,10 @@ const FindDoctor = () => {
       <h2 className="text-primary text-center">
         Our Specialized Doctors <span className="text-warning">Doctors</span>
       </h2>
-      <Row xs={2} md={3} className="g-4 gy-4">
-        {service.map((service) => {
-          return (
+
+      {service.map((service) => {
+        return (
+          <Row xs={12} md={4} className="g-4 gy-4">
             <Col>
               <Card>
                 <Card.Img
@@ -34,7 +35,6 @@ const FindDoctor = () => {
                   <h5 className=" my-2 py-2 text-primary text-centar">
                     {service.doctor_expertice}
                   </h5>
-
                   <Card.Text className="py-1 my-1">
                     <span>{address} </span>
                     {service.doctor_address}
@@ -57,9 +57,9 @@ const FindDoctor = () => {
                 </Card.Body>
               </Card>
             </Col>
-          );
-        })}
-      </Row>
+          </Row>
+        );
+      })}
     </Container>
   );
 };
