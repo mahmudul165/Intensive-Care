@@ -6,7 +6,7 @@
 
 ## Description:
 
-## 1.Website related to general hospital where user can see multiple service in single page react appliction .To see single service user need to login.They can see details about eatch service by button click event.Each service have a relevant name, image, short description and a specific button.
+### 1.Website related to general hospital where user can see multiple service in single page react appliction .To see single service user need to login.They can see details about eatch service by button click event.Each service have a relevant name, image, short description and a specific button.
 
 ### 2."Find a doctor" nav link user see authentication page where they can toogle up to login and signup option accroding their status.In Book Apointment button they are redirect to authentication pages.
 
@@ -20,12 +20,12 @@
 
 ## Tecnology :
 
-1.ReactBootstrap,
-2.ReactFontAwesome
-3.uses Json file for "services.json"
-4.Html5,CSS3,JAVASCRIPT,ES6
+1.REACTBOOTSTRAP,
+2.REACTFONTAWESOME
+3.USES JSON FILE FOR "SERVICES.JSON"
+4.HTML5,CSS3,JAVASCRIPT,ES6
 5.REACT HOOK, CONTEXT API
 6.REACT ROUTER DOM VERSION 6 (DYNAMIC ROUTE,PRIVATE ROUTE)
-7.FIREBASE AUTHENTICATION (google,github,email-password)
+7.FIREBASE AUTHENTICATION (GOOGLE,GITHUB,EMAIL-PASSWORD)
 8.FIREBASE DEPLOY
 9.REACT-USE-FORM
